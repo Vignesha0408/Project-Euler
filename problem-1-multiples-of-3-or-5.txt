@@ -1,0 +1,20 @@
+** start of script.js **
+
+function multiplesOf3Or5(number) 
+{
+    let n=number;n=n-1 ;
+    let sum=0;
+    while(n>=0)
+    {
+        if(n%3==0 || n%5==0)
+          sum=sum+n;
+          n--;
+        
+    }
+    return sum;
+}
+
+multiplesOf3Or5(1000);
+
+** end of script.js **
+

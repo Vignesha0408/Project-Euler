@@ -1,0 +1,24 @@
+** start of script.js **
+
+function largestPrimeFactor(n) {
+  let arr=[0];
+  let max=0,i;
+  while(n!=1)
+  for(i=2;i<=n;i++)
+  {
+    if(n%i==0)
+      {
+        n=n/i;
+        arr.push(i);
+        break;
+      }
+  }
+  for(i=0;i<arr.length;i++)
+    if(max<arr[i])
+      max=arr[i];
+  return max;
+}
+largestPrimeFactor(13195);
+
+** end of script.js **
+
