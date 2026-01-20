@@ -1,0 +1,38 @@
+** start of script.js **
+
+function ispalindrome(n)
+{
+  let n1=n,rev=0;
+  while(n1>0)
+  {
+    rev=rev*10+n1%10;
+    n1=Math.floor(n1/10);
+  }
+  
+  return n===rev;
+}/*function ispalindrome(n)
+ */
+//after loop n,=== and == mean
+
+
+function largestPalindromeProduct(n) {
+  var large=0,fordigi=0;
+  
+  // to find largest of 2 digit
+  for(let i=0;i<n;i++)
+        fordigi=fordigi*10+9;
+
+  for(let i=0;i<=fordigi;i++)
+  for(let j=0;j<=fordigi;j++)
+  {
+    if(ispalindrome(i*j))
+      if(large<i*j)
+        large=i*j;
+  }
+  return large;
+}
+
+largestPalindromeProduct(3);
+
+** end of script.js **
+
