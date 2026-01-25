@@ -1,0 +1,32 @@
+** start of script.js **
+
+/*
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
+*/ 
+
+function LCM(n1,n2)
+{
+  let max=(n1>n2)?n1:n2;
+  while(1)
+  {
+    if(max%n1===0 && max%n2===0)
+        return max;
+    max++;
+  }
+}
+function smallestMult(n) {
+  let ans=1;;
+  for(let i=2;i<=n;i++)
+  {
+    ans=LCM(ans,i)
+  }
+
+  return ans;
+}
+
+smallestMult(20);
+
+** end of script.js **
+
