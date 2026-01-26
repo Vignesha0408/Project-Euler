@@ -1,0 +1,17 @@
+** start of script.js **
+
+function sumSquareDifference(n) {
+  let ans=0,sum=0,sos=0;
+  for(let i=0;i<=n;i++)
+    {
+      sum+=i;
+      sos+=(i*i);
+    }
+  ans=(sum*sum)-sos;
+  return ans;
+}
+
+sumSquareDifference(100);
+
+** end of script.js **
+
