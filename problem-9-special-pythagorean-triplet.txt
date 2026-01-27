@@ -1,0 +1,19 @@
+** start of script.js **
+
+function specialPythagoreanTriplet(n) {
+let  ans=0,a,b,c;
+for(let a=1;a<=n;a++)
+for(let b=1;b<=n;b++)
+for(let c=1;c<=n;c++)
+if(a<=b && b<=c)
+if(a*a + b*b == c*c)
+if(a+b+c==n)
+  ans=a*b*c;
+
+ return ans;
+}
+
+specialPythagoreanTriplet(1000);
+
+** end of script.js **
+
